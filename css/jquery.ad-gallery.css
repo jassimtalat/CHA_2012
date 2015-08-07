@@ -1,0 +1,35 @@
+#gallery { height: 350px; }
+#descriptions {font:normal 10px Arial, Helvetica, sans-serif; position:relative; height:50px; margin-top:10px; width:386px; padding:10px; overflow: hidden;}
+#descriptions .ad-image-description {position:absolute;}
+#descriptions .ad-image-description .ad-description-title {display:block;}
+.ad-gallery {width:386px;float:left;}
+.ad-gallery, .ad-gallery * {margin:0; padding:0; }
+.ad-gallery .ad-image-wrapper {	width:100%;	position:relative; overflow:hidden;  height:360px; top:-57px; margin-top:0;}
+.ad-gallery .ad-image-wrapper .ad-loader {position:absolute; z-index:10; top:48%; left:48%;}
+.ad-gallery .ad-image-wrapper .ad-image {position: absolute; overflow:hidden; top:0; left:0; z-index:9;}
+.ad-gallery .ad-image-wrapper .ad-image a img {border:0;}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description {position:absolute; font:normal 11px arial; left:0; padding:10px; text-align: left;width:100%; z-index:2; color:#000;}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title {display:block;}
+.ad-gallery .ad-controls {font:normal 11px arial; color:#fff;}
+.ad-gallery .ad-info {float:left; display: none;}
+.ad-gallery .ad-slideshow-controls {float:right;}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-start, .ad-gallery .ad-slideshow-controls .ad-slideshow-stop {padding-left:5px; cursor:pointer;}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-countdown {padding-left:5px; font-size:0.9em;}
+.ad-gallery .ad-slideshow-running .ad-slideshow-start {cursor:default; font-style:italic;}
+.ad-gallery .ad-nav {width:285px; position:relative; padding:0 13px; left:35px; top: -95px;
+ *left:10px; *top: -85px; /*ie*/}
+ /* Firefox */
+@-moz-document url-prefix()
+{.ad-gallery .ad-nav { left:25px; top: -80px; }}
+.ad-gallery .ad-forward, .ad-gallery .ad-back {position:absolute; top:0; height:45px; z-index:10;}
+* html .ad-gallery .ad-forward, .ad-gallery .ad-back {height:74px;}
+.ad-gallery .ad-nav .ad-thumbs {overflow:hidden; width:100%; position: relative;top:-20px;}
+.ad-gallery .ad-thumbs .ad-thumb-list {float:left; width:9000px; list-style:none;}
+.ad-gallery .ad-thumbs li {float:left; padding:6px; background:url(../images/thumbs/img-thumb-gray.png) no-repeat; margin:0 4px;}
+.ad-gallery .ad-thumbs li a {display:inline-block;}
+.ad-gallery .ad-thumbs li a img {}
+.ad-gallery .ad-thumbs li a.ad-active img {background:#F00; z-index:2000; padding:6px; margin:-6px; background:url(../images/thumbs/img-thumb-gold.png); border:none;}
+.ad-preloads {position:absolute; left:-9000px; top:-9000px;}
+.ad-prev {
+position: absolute; left:5px; top:330px; background:url(../images/ad_prev.png) no-repeat;width:30px;height:30px;cursor:pointer;z-index:100;}
+.ad-next {position:absolute; right:5px; top:330px;background:url(../images/ad_next.png) no-repeat;width:30px;height:30px;cursor:pointer;z-index: 100; }
